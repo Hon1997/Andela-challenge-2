@@ -1,0 +1,93 @@
+/*Variables*/
+
+:root {
+    --primary: hsl(223, 87%, 63%);
+    --secondary: hsl(223, 100%, 88%);
+    hsl(354, 100%, 66%);
+    --neutral: hsl(0, 0%, 59%);
+    ;
+    hsl(209, 33%, 12%)
+}
+
+
+/*reset*/
+
+body,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: white;
+    overflow-x: hidden;
+    font-family: LibreFranklin;
+    font: size 20px;
+}
+
+.button {
+    background-color: var(--primary);
+    border-radius: 150px;
+    border: 1px solid white;
+    padding: 6 px 12px;
+    display: inline-block;
+}
+
+.button,
+textarea {
+    color: whitesmoke;
+}
+
+button:hover {
+    color: var(--secondary);
+    background-color: var(--primary)
+}
+
+input {
+    border-radius: 150px;
+    border: 1px solid var(--neutral);
+    padding: 6 px 12px;
+    display: inline-block;
+}
+
+input,
+textarea {
+    color: aliceblue;
+}
+
+
+/*base styles*/
+
+
+/*fonts*/
+
+@font-face {
+    font-family: "LibreFranklin";
+    src: url("assets/fonts/LibreFranklin");
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: #a6a8ac;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: rgb(102, 101, 101);
+    font-size: 1.2em;
+}
+
+
+/*mobile styles*/
+
+@media only screen and (max-width: 375px) {}
+
+
+/*desktop styles*/
+
+@media only screen and (min-width:1440px) {}
