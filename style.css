@@ -3,36 +3,37 @@
 :root {
     --primary: hsl(223, 87%, 63%);
     --secondary: hsl(223, 100%, 88%);
-    hsl(354, 100%, 66%);
     --neutral: hsl(0, 0%, 59%);
-    ;
-    hsl(209, 33%, 12%)
 }
 
 
 /*reset*/
 
 body,
-a,
-p {
+a {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+div.p {
+    text-align: center;
 }
 
 body {
     background: white;
     overflow-x: hidden;
     font-family: LibreFranklin;
-    font: size 20px;
+    font-size: 20px;
 }
 
-.button {
+button {
     background-color: var(--primary);
-    border-radius: 150px;
+    border-radius: 100px;
     border: 1px solid white;
-    padding: 6 px 12px;
-    display: inline-block;
+    font-size: 12px;
+    width: 150px;
+    height: 25px;
 }
 
 .button,
@@ -47,9 +48,13 @@ button:hover {
 
 input {
     border-radius: 150px;
-    border: 1px solid var(--neutral);
-    padding: 6 px 12px;
     display: inline-block;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+    width: 200px;
+    height: 10px;
 }
 
 input,
@@ -58,14 +63,11 @@ textarea {
 }
 
 
-/*base styles*/
-
-
 /*fonts*/
 
 @font-face {
     font-family: "LibreFranklin";
-    src: url("assets/fonts/LibreFranklin");
+    src: url("assets/fonts/LibreFranklin-Italic-VariableFont_wght.ttf");
 }
 
 h1,
@@ -74,20 +76,69 @@ h4,
 h5,
 h6 {
     color: #a6a8ac;
-    font-size: 1.2em;
+    font-size: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 h3 {
     color: rgb(102, 101, 101);
-    font-size: 1.2em;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 1px;
+    margin-top:
+}
+
+.but {
+    text-align: center;
+}
+
+.input {
+    position: absolute;
+    top: 355px;
+    left: 575px;
+    height: 100px;
+    width: 50px;
+}
+
+main.dashboard {
+    text-align: center;
+}
+
+.main {
+    width: 200px;
+    height: 120px;
 }
 
 
-/*mobile styles*/
+/* Resize images */
 
-@media only screen and (max-width: 375px) {}
+.dashboard img {
+    width: 70%;
+    height: 50%;
+}
+
+svg.logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
 
-/*desktop styles*/
+/*tablets an laptop styles*/
 
-@media only screen and (min-width:1440px) {}
+@media only screen and (max-width:960px) {
+    body {
+        font-size: 18px;
+    }
+}
